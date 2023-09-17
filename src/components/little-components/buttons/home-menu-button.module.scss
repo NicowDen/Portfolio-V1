@@ -1,0 +1,71 @@
+.button {
+  position: relative;
+  min-width: 130px;
+  min-height: 40px;
+  padding: 8px;
+  outline: none;
+  background-color: transparent;
+  color: var(--color2);
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  @media (max-height: 450px) {
+    min-width: 120px;
+    min-height: 20px;
+    font-size: 14px;
+  }
+}
+
+.active_button {
+  box-shadow: inset 0px 0px 25px var(--color3);
+  border-radius: 8px;
+}
+
+.active_button:after,
+.active_button:before {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.button:after,
+.button:before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  transition: min-width 0.5s, min-height 0.5s;
+  border-radius: 1px;
+}
+
+.button_inactive:after,
+.button_inactive:before {
+  min-width: 15px;
+  min-height: 15px;
+}
+
+.button:after {
+  border-top: 3px solid var(--color3);
+  border-left: 3px solid var(--color3);
+  left: 0;
+  top: 0;
+}
+
+.button:before {
+  border-bottom: 3px solid var(--color3);
+  border-right: 3px solid var(--color3);
+  right: 0;
+  bottom: 0;
+}
+
+.button:hover {
+  box-shadow: inset 0px 0px 25px var(--color3);
+  border-radius: 8px;
+  //   scale: 1.1;
+}
+
+.button:hover::after,
+.button:hover::before {
+  min-width: 100%;
+  min-height: 100%;
+}

@@ -1,0 +1,23 @@
+.prev_arrow {
+  color: var(--color3);
+  position: relative;
+  font-size: 3rem;
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius);
+  transition: scale 0.4s;
+  background-color: var(--arrows-background);
+  scale: 0.9;
+  @media (max-width: 900px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 350px) {
+    display: none;
+  }
+}
+
+.prev_arrow {
+  left: 15px;
+}

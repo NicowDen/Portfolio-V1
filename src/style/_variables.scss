@@ -1,0 +1,24 @@
+:root {
+  --color1: #07182e;
+  --color2: #00b7ff;
+  --color3: #ff30ff;
+  --color4: #1a1a46;
+  --color5: #07182e;
+  --mainTextColor: #00b7ff;
+  --mainTitleColor: #ff30ff;
+  --linear: linear-gradient(50deg, var(--color3), var(--color2));
+  --perfect-linear: linear-gradient(
+    0deg,
+    rgba(0, 183, 255, 1) 14%,
+    rgba(255, 48, 255, 1) 64%
+  );
+  --theme-linear: linear-gradient(
+    90deg,
+    var(--color2) 20%,
+    var(--color1) 49%,
+    var(--color3) 75%,
+    var(--color2) 100%
+  );
+  --arrows-background: rgba(26, 26, 70, 0.5);
+  --radius: 16px;
+}

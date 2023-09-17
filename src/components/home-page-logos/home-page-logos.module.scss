@@ -1,0 +1,45 @@
+@keyframes logosAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.logos {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  background-color: blue;
+  min-width: 100%;
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+  }
+  & li {
+    min-height: 80px;
+    min-width: 90px;
+    border-radius: 16px;
+    animation: 1s logosAnimation;
+    background-color: var(--color5);
+    @media (max-width: 800px) {
+      min-height: 70px;
+      min-width: 80px;
+    }
+    @media (max-width: 600px) {
+      min-height: 60px;
+      min-width: 70px;
+    }
+    @media (max-width: 500px) {
+      min-height: 50px;
+      min-width: 60px;
+    }
+    @media (max-height: 450px) {
+      min-height: 40px;
+      min-width: 50px;
+    }
+    img {
+      padding: 4px;
+    }
+  }
+}

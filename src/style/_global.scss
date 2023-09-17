@@ -1,0 +1,20 @@
+html {
+  background-color: var(--color1);
+  // overflow: scroll;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color1);
+}
+
+* {
+  transition: color 0.1s, background-color 0.3s, border 0.3s;
+}

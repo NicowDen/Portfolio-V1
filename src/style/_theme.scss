@@ -1,0 +1,71 @@
+.theme_1 {
+  --color1: #07182e;
+  --color2: #00b7ff;
+  --color3: #ff30ff;
+  --color4: #1a1a46;
+  --color5: #07182e;
+  --linear: linear-gradient(50deg, var(--color3), var(--color2));
+  --perfect-linear: linear-gradient(
+    0deg,
+    rgba(0, 183, 255, 1) 14%,
+    rgba(255, 48, 255, 1) 64%
+  );
+  --mainTextColor: #00b7ff;
+  --mainTitleColor: #ff30ff;
+  --theme-linear: linear-gradient(
+    90deg,
+    var(--color2) 20%,
+    var(--color1) 49%,
+    var(--color3) 75%,
+    var(--color2) 100%
+  );
+  --arrows-background: rgba(26, 26, 70, 0.5);
+}
+
+.theme_2 {
+  --color1: rgb(26, 26, 26);
+  --color2: rgb(224, 7, 7);
+  --color3: white;
+  --color4: rgb(36, 36, 36);
+  --color5: rgb(26, 26, 26);
+  --linear: linear-gradient(50deg, var(--color3), var(--color2));
+  --perfect-linear: linear-gradient(
+    0deg,
+    rgba(224, 7, 7) 14%,
+    rgba(255, 255, 255, 1) 64%
+  );
+  --mainTextColor: white;
+  --mainTitleColor: rgb(224, 7, 7);
+  --theme-linear: linear-gradient(
+    90deg,
+    var(--color2) 30%,
+    var(--color1) 49%,
+    var(--color3) 80%,
+    var(--color2) 100%
+  );
+  --arrows-background: rgba(36, 36, 36, 0.5);
+}
+
+.theme_3 {
+  --color1: rgb(244, 243, 243);
+  --color2: black;
+  --color3: black;
+  --color4: rgb(244, 243, 243);
+  --color5: black;
+  --linear: linear-gradient(50deg, black, white);
+  --perfect-linear: linear-gradient(
+    0deg,
+    rgba(0, 0, 0) 14%,
+    rgba(255, 255, 255) 64%
+  );
+  --mainTextColor: black;
+  --mainTitleColor: black;
+  --theme-linear: linear-gradient(
+    90deg,
+    var(--color2) 10%,
+    var(--color1) 49%,
+    var(--color3) 85%,
+    var(--color2) 100%
+  );
+  --arrows-background: rgba(0, 0, 0, 0.1);
+}
